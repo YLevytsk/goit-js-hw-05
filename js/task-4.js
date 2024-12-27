@@ -1,8 +1,8 @@
 const getTotalBalanceByGender = (users, gender) => {
   return users
-    .filter(user => user.gender === gender) // фильтруем пользователей по полу
-    .map(user => user.balance) // получаем массив балансов пользователей
-    .reduce((total, balance) => total + balance, 0); // суммируем балансы
+    .filter(user => user.gender === gender)
+    .map(user => user.balance)
+    .reduce((total, balance) => total + balance, 0); 
 };
 
 console.log(getTotalBalanceByGender(clients, "male"));  // 12053
